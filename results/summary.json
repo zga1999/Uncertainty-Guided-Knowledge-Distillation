@@ -1,0 +1,17 @@
+[
+  {
+    "dataset": "CIFAR-100",
+    "method": "UATM + UGSA",
+    "teacher": "ResNet32x4",
+    "student": "ResNet8x4",
+    "run_id": "20260218_180916",
+    "seed": 1618450972,
+    "epochs": 240,
+    "best_epoch": 240,
+    "top1_percent": 77.19999694824219,
+    "runs": 1,
+    "evaluation": "Best per-epoch test-split result reported by validation loop",
+    "config": "configs/distillers/cifar100/ugkd/resnet32x4_resnet8x4.py",
+    "results": "results/cifar100/resnet32x4_resnet8x4/20260218_180916"
+  }
+]

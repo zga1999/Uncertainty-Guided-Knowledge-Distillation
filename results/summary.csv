@@ -1,0 +1,2 @@
+dataset,method,teacher,student,run_id,seed,epochs,best_epoch,top1_percent,runs,evaluation,config,results
+CIFAR-100,UATM + UGSA,ResNet32x4,ResNet8x4,20260218_180916,1618450972,240,240,77.19999694824219,1,Best per-epoch test-split result reported by validation loop,configs/distillers/cifar100/ugkd/resnet32x4_resnet8x4.py,results/cifar100/resnet32x4_resnet8x4/20260218_180916
