@@ -1,0 +1,2 @@
+# Optional dependency for generating figures; CSV/JSON summaries use only Python's standard library.
+matplotlib>=3.6,<4
