@@ -1,0 +1,100 @@
+{
+  "run_id": "20260218_180916",
+  "dataset": "CIFAR-100",
+  "method": "UATM + UGSA",
+  "teacher": "ResNet32x4",
+  "student": "ResNet8x4",
+  "epochs": 240,
+  "batch_size_per_gpu": 64,
+  "gpu_count": 1,
+  "effective_training_batch_size": 64,
+  "configured_auto_scale_lr_base_batch_size": 256,
+  "optimizer": {
+    "type": "SGD",
+    "initial_lr": 0.05,
+    "momentum": 0.9,
+    "weight_decay": 0.0005
+  },
+  "lr_scheduler": {
+    "type": "MultiStepLR",
+    "milestones": [
+      150,
+      180,
+      210
+    ],
+    "gamma": 0.1
+  },
+  "losses": {
+    "ORI": {
+      "weight": 1.0
+    },
+    "UATM": {
+      "temperature": 4.0,
+      "weight": 15.0
+    },
+    "UGSA": {
+      "loss_type": "kl",
+      "weight": 1.0
+    }
+  },
+  "augmentation": {
+    "random_crop": {
+      "crop_size": 32,
+      "padding": 4
+    },
+    "horizontal_flip_prob": 0.5,
+    "mixup": {
+      "alpha": 0.4,
+      "prob": 0.6
+    },
+    "cutmix": {
+      "alpha": 1.0,
+      "prob": 0.2
+    }
+  },
+  "configured_seed": null,
+  "runtime_seed_from_log": 1618450972,
+  "deterministic": false,
+  "environment_from_log": {
+    "platform": "Linux",
+    "python": "3.8.20",
+    "pytorch": "1.11.0+cu113",
+    "torchvision": "0.12.0+cu113",
+    "mmengine": "0.7.4",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "mmcls_version": null
+  },
+  "evaluation": {
+    "reported_by": "Epoch(val)",
+    "dataset_test_mode": true,
+    "selection": "Best accuracy/top1 over the CIFAR-100 test split each epoch",
+    "independent_test_evaluation": false,
+    "number_of_runs": 1
+  },
+  "checkpoint": {
+    "original_filename": "best_accuracy_top1_epoch_240.pth",
+    "release_asset_name": "ugkd_cifar100_resnet32x4_resnet8x4_uatm_ugsa_20260218_180916_epoch240.pth",
+    "size_bytes": 59863977,
+    "sha256": "662210d7921358a405f2364fcc7914086ecc62a8e5e39c06c7f3bef1f80b1921",
+    "recorded_epoch": 240,
+    "teacher_parameter_names_observed": 333,
+    "student_parameter_names_observed": 105,
+    "optimizer_marker_observed": false,
+    "inspection": "ZIP and pickle opcode inspection only; no pickle execution or model evaluation.",
+    "publication_status": "prepared_locally_not_uploaded",
+    "student_only": false
+  },
+  "missing_for_training": [
+    "ClassificationDistiller implementation",
+    "ORILoss implementation",
+    "UATMLoss implementation",
+    "UGSALoss implementation",
+    "projects/_models_/cifar100_resnet32x4.py",
+    "projects/_models_/cifar100_resnet8x4.py",
+    "weights/resnet32x4_81.63.pth",
+    "training and evaluation entry points",
+    "exact mmcls version and dependency specification"
+  ],
+  "teacher_accuracy_note": "81.63 appears only in the referenced teacher checkpoint filename; no teacher evaluation is provided."
+}

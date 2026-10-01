@@ -1,0 +1,12 @@
+{
+  "validation_epochs_complete": true,
+  "log_and_scalars_agree": true,
+  "validation_records_compared": 240,
+  "accuracy_tolerance_percent": 5.1e-05,
+  "checkpoint_epoch_agrees": true,
+  "all_copied_files_sha256_match": true,
+  "all_source_files_accounted_for": true,
+  "config_parses_as_python": true,
+  "model_inference_executed": false,
+  "training_executed": false
+}

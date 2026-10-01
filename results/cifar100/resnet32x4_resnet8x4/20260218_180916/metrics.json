@@ -1,0 +1,17 @@
+{
+  "metric": "accuracy/top1",
+  "unit": "percent",
+  "best_top1_percent": 77.19999694824219,
+  "best_epochs": [
+    240
+  ],
+  "final_top1_percent": 77.19999694824219,
+  "final_epoch": 240,
+  "validation_records": 240,
+  "training_records": 1680,
+  "validation_epoch_range": [
+    1,
+    240
+  ],
+  "training_aggregation": "Unweighted mean of logged windows within each epoch; not a full-epoch loss."
+}

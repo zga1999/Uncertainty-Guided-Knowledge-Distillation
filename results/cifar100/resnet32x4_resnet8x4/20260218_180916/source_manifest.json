@@ -1,0 +1,51 @@
+[
+  {
+    "source_path": "20260218_180916/.ipynb_checkpoints/20260218_180916-checkpoint.log",
+    "size_bytes": 490798,
+    "sha256": "c3262b5dc30f934e9d6c5591f69249a73f7020c5d689ca0b9ad7fc11d615aa6a",
+    "disposition": "duplicate_omitted",
+    "identical_repository_path": "results/cifar100/resnet32x4_resnet8x4/20260218_180916/train.log"
+  },
+  {
+    "source_path": "20260218_180916/20260218_180916.log",
+    "size_bytes": 490798,
+    "sha256": "c3262b5dc30f934e9d6c5591f69249a73f7020c5d689ca0b9ad7fc11d615aa6a",
+    "disposition": "copied_verbatim",
+    "repository_path": "results/cifar100/resnet32x4_resnet8x4/20260218_180916/train.log"
+  },
+  {
+    "source_path": "20260218_180916/vis_data/20260218_180916.json",
+    "size_bytes": 477779,
+    "sha256": "6ff6c3350f68e60716ffc591675d9d23c7b9e0749a96face277cc94522c0992a",
+    "disposition": "duplicate_omitted",
+    "identical_repository_path": "results/cifar100/resnet32x4_resnet8x4/20260218_180916/scalars.json"
+  },
+  {
+    "source_path": "20260218_180916/vis_data/config.py",
+    "size_bytes": 3788,
+    "sha256": "6d22517c0798d69a643fb008a3fd42f8d4437945ad1e7ff5921ba408dd35cd3b",
+    "disposition": "copied_verbatim",
+    "repository_path": "results/cifar100/resnet32x4_resnet8x4/20260218_180916/config.py"
+  },
+  {
+    "source_path": "20260218_180916/vis_data/scalars.json",
+    "size_bytes": 477779,
+    "sha256": "6ff6c3350f68e60716ffc591675d9d23c7b9e0749a96face277cc94522c0992a",
+    "disposition": "copied_verbatim",
+    "repository_path": "results/cifar100/resnet32x4_resnet8x4/20260218_180916/scalars.json"
+  },
+  {
+    "source_path": "best_accuracy_top1_epoch_240.pth",
+    "size_bytes": 59863977,
+    "sha256": "662210d7921358a405f2364fcc7914086ecc62a8e5e39c06c7f3bef1f80b1921",
+    "disposition": "separate_release_asset",
+    "asset_name": "ugkd_cifar100_resnet32x4_resnet8x4_uatm_ugsa_20260218_180916_epoch240.pth"
+  },
+  {
+    "source_path": "resnet32x4_resnet8x4.py",
+    "size_bytes": 3788,
+    "sha256": "6d22517c0798d69a643fb008a3fd42f8d4437945ad1e7ff5921ba408dd35cd3b",
+    "disposition": "copied_verbatim",
+    "repository_path": "configs/distillers/cifar100/ugkd/resnet32x4_resnet8x4.py"
+  }
+]
